@@ -1,0 +1,26 @@
+<div class="app-container">
+<app-header (selectedPage) = "changePage($event)"></app-header>
+@if (page === "services") {
+    <main class="content">
+        <app-services></app-services>
+    </main>
+   
+} @else if (page === "contact") {
+    <main class="content">
+        <app-contact></app-contact>
+    </main>
+    
+} @else if (page === "aboutus") {
+    <main class="content">
+        <app-aboutus></app-aboutus>
+    </main>
+    
+} @else {
+    <main class="content">
+        <app-home></app-home>
+    </main>
+
+}
+
+<app-footer></app-footer>
+</div>

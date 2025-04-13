@@ -1,0 +1,27 @@
+$alapszin: #f0e6e0;
+$kiemeles: #a67c52;
+$kiemeles-sotetebb: #8c6239;
+$szoveg: #333;
+
+
+.rolunk {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: lighten($alapszin, 4%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+    h2 {
+      color: $kiemeles;
+      margin-bottom: 1.2rem;
+    }
+  
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: $szoveg;
+    }
+  }
+  

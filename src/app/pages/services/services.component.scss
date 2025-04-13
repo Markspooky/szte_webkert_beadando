@@ -1,0 +1,44 @@
+$alapszin: #f0e6e0;
+$kiemeles: #a67c52;
+$kiemeles-sotetebb: #8c6239;
+$szoveg: #333;
+
+.szolgaltatasok {
+  background-color: lighten($alapszin, 3%);
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+
+  h2 {
+    color: $kiemeles;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+
+    li {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid lighten($kiemeles, 30%);
+      font-weight: bold;
+      color: $szoveg;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+$alapszin: #f0e6e0;
+$kiemeles: #a67c52;
+$kiemeles-sotetebb: #8c6239;
+$szoveg: #333;
+
+header {
+  background-color: $kiemeles;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  nav {
+    margin-top: 1.5rem;
+
+    select {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: white;
+      color: $kiemeles-sotetebb;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background-color: #f8f4f1;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px lighten($kiemeles, 30%);
+      }
+    }
+  }
+}
