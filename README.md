@@ -1,6 +1,6 @@
-##Nagy Márk
-##DHZT4U
-##Masszázs időpontfoglaló oldal
+#Nagy Márk
+#DHZT4U
+#Masszázs időpontfoglaló oldal
 
 # Beadando
 
